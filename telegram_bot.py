@@ -1,11 +1,11 @@
 from telegram.ext import Updater,CommandHandler,MessageHandler,Filters   
 from Adafruit_IO import Client,Data
+import os
 
+ADAFRUIT_IO_USERNAME = os.getenv('nik12345')   
 
-ADAFRUIT_IO_USERNAME = 'nik12345'   
-
-ADAFRUIT_IO_KEY = 'aio_zXnS03LQ4NLOQh6iQxSVpbRBC3P4'
-TOKEN = '1470039508:AAEVehZG4wQFcm0JtA2uExdr6pSf0nKI-fI'
+ADAFRUIT_IO_KEY = os.getenv('aio_zXnS03LQ4NLOQh6iQxSVpbRBC3P4')
+TOKEN = os.getenv('1470039508:AAEVehZG4wQFcm0JtA2uExdr6pSf0nKI-fI')
 aio = Client(ADAFRUIT_IO_USERNAME,ADAFRUIT_IO_KEY)
 
 def turnoff(update, context):
