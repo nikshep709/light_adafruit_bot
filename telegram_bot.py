@@ -10,7 +10,7 @@ aio = Client(ADAFRUIT_IO_USERNAME,ADAFRUIT_IO_KEY)
 
 def turnoff(update, context):
   context.bot.send_message(chat_id=update.effective_chat.id, text="Light turned off")
-  context.bot.send_photo(chat_id=update.effective_chat.id,photo='https://www.pepperfry.com/black-steel-picture-light-by-cocovey-1791427.html?type=rel&from=vip3&type1=similar&from1=1791433')
+  context.bot.send_photo(chat_id=update.effective_chat.id,photo='https://www.shutterstock.com/image-vector/turn-off-light-finger-turning-design-677714989')
   send_value(0)
 def turnon(update, context):
   context.bot.send_message(chat_id=update.effective_chat.id, text="Light turned on")
